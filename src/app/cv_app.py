@@ -21,7 +21,7 @@ class CVApp:
                 resume.login()
                 return json.dumps(resume.getResume(), indent=4)
             except Exception as e:
-                return jsonify({"error": str(e)}), 500          
+                return jsonify({"error": str(e)}), 500
 
     def run(self):
         self.app.run(debug=True)
